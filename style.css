@@ -210,6 +210,17 @@ h3 {
   margin-top: 34px;
 }
 
+.page-hero {
+  min-height: 520px;
+  display: grid;
+  align-items: center;
+  padding-top: 88px;
+}
+
+.page-hero-copy {
+  max-width: 860px;
+}
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -368,6 +379,21 @@ h3 {
   transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
 }
 
+.step-label {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  margin-bottom: 18px;
+  padding: 0 12px;
+  border: 1px solid rgba(59, 130, 246, 0.36);
+  border-radius: 8px;
+  color: #bfdbfe;
+  background: rgba(59, 130, 246, 0.12);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
 .feature-card:hover {
   transform: translateY(-4px);
   border-color: rgba(59, 130, 246, 0.44);
@@ -493,12 +519,41 @@ h3 {
   margin-top: 28px;
 }
 
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+}
+
+.contact-email {
+  margin-top: 14px !important;
+  color: var(--soft) !important;
+  font-weight: 800;
+}
+
 .premium-grid {
   display: grid;
   grid-template-columns: 0.95fr 1fr;
   gap: 28px;
   align-items: center;
   padding: 34px;
+}
+
+.guide-list {
+  margin: 0;
+  padding-left: 22px;
+  color: var(--soft);
+  font-weight: 700;
+}
+
+.guide-list li + li {
+  margin-top: 10px;
+}
+
+.back-section {
+  padding-top: 0;
+  text-align: center;
 }
 
 .footer {
@@ -612,7 +667,13 @@ h3 {
     padding-top: 42px;
   }
 
+  .page-hero {
+    min-height: auto;
+    padding-top: 72px;
+  }
+
   .hero-actions,
+  .contact-actions,
   .button {
     width: 100%;
   }
